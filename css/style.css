@@ -16,7 +16,9 @@ body {
 .link {
   text-decoration: none;
 }
-
+.pointer {
+  cursor: pointer;
+}
 /*---------------------------------------------------------------header-------------------------------------------------------------------------*/
 
 .header-logo {
@@ -40,6 +42,9 @@ body {
 }
 .header-link:hover,
 .header-link:focus {
+  color: var(--accent-color);
+}
+.header-list .header-link:active {
   color: var(--accent-color);
 }
 .header-mail {
