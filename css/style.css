@@ -4,11 +4,14 @@
   --primary-title-color: #ffffff;
   --secondary-title-color: #212121;
   --accent-color: #2196f3;
+  --background-color: #f5f4fa;
+  --adres-color: rgba(255, 255, 255, 0.6);
+  --secondary-backgroundcolor: #2f303a;
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f5f4fa;
-  color: #212121;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
 }
 .list {
   list-style: none;
@@ -32,7 +35,8 @@ body {
 .second-text {
   color: var(--secondary-title-color);
 }
-.header-link {
+.header-link,
+.header-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 0.87;
@@ -46,14 +50,6 @@ body {
 }
 .header-list .header-link:active {
   color: var(--accent-color);
-}
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 0.87;
-  letter-spacing: 0.02em;
-
-  color: var(--primary-text-color);
 }
 .header-mail:hover,
 .header-mail:focus {
@@ -75,10 +71,11 @@ body {
 
 /*hiro section*/
 
-.hiro-container {
+.hiro {
   background-color: #2f303a;
   text-align: center;
 }
+
 .title-hiro {
   font-weight: 900;
   font-size: 44px;
@@ -195,13 +192,10 @@ body {
 
   color: var(--second-text-color);
 }
-.content-container {
-  background: #ffffff;
-}
 
 /*Footer*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--secondary-backgroundcolor);
 }
 .footer-logo {
   font-family: Raleway;
@@ -215,34 +209,18 @@ body {
   color: var(--accent-color);
 }
 .logo-text {
-  color: #ffffff;
+  color: var(--primary-title-color);
+}
+.footer-mail,
+.footer-tel,
+.footer-google {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 0.58;
+  letter-spacing: 0.03em;
+  color: var(--adres-color);
 }
 .footer-google {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 0.58;
-
-  letter-spacing: 0.03em;
-
-  color: #ffffff;
-}
-
-.footer-mail {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 0.58;
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-tel {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 0.58;
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primary-title-color);
 }
